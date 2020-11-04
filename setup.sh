@@ -13,3 +13,10 @@ eksctl create cluster \
   --nodes-max 2 \
   --ssh-access \
   --managed
+
+
+kubectl apply -f ./my-api/deployment.yaml
+kubectl apply -f ./my-api/service.yaml
+
+
+kubectl apply -f ./reverseproxy/deployment.yaml
